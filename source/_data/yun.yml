@@ -1,0 +1,4 @@
+avatar:
+    url: /images/avatar.png
+    rounded: true
+    opacity: 1
