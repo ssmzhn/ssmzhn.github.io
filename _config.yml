@@ -4,16 +4,16 @@
 
 # Site
 title: NameSetter's Blog
-subtitle: ''
-description: ''
+subtitle: '一个靠CV编程才弄出来的博客罢了'
+description: '这种屑作还有描述？差不多得了'
 keywords:
-author: John Doe
-language: en
+author: NameSetter
+language: zh
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://ssmzhn.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
