@@ -107,3 +107,13 @@ utterances:
 #        crossorigin="anonymous"
 #        async>
 #</script>
+footer:
+  since: 2021
+  live_time:
+    enable: true
+    prefix: 这个博客爬了
+    suffix: 😅
+    start_time: "2021-08-15T17:23:40"
+
+wordcloud:
+  enable: true
