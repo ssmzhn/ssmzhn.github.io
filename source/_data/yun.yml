@@ -16,6 +16,10 @@ banner:
     icon: icon-arrow-down-s-line
 
 social:
+  #  - name: QQ
+  #    link: https://ti.qq.com/open_qq/index2.html?url=mqqapi%3a%2f%2fuserprofile%2ffriend_profile_card%3fsrc_type%3dweb%26version%3d1.0%26source%3d2%26uin%3d3285956207
+  #    icon: icon-qq-line
+  #    color: "#12B7F5"
   - name: GitHub
     link: https://github.com/ssmzhn
     icon: icon-github-line
@@ -52,10 +56,10 @@ social:
     link: https://twitter.com/ssmzhn12138
     icon: icon-twitter-line
     color: "#1da1f2"
-  # - name: Telegram
-  #   link: https://t.me/YunYouJun
-  #   icon: icon-telegram-line
-  #   color: "#0088CC"
+  - name: Telegram
+    link: https://t.me/NameSetter
+    icon: icon-telegram-line
+    color: "#0088CC"
   #  - name: Telegram Channel
   #    link: https://t.me/elpsycn
   #    # icon: icon-telegram-fill
@@ -71,3 +75,35 @@ social:
       #    color: black
 reward:
   enable: false
+pages:
+  - name: 小伙伴们
+    url: /links
+    icon: icon-genderless-line
+    color: dodgerblue
+notice:
+  enable: true
+  content: 来了就看看再走吧！
+comment:
+  enable: true
+  tips:
+    - 若您想及时得到回复提醒，建议跳转 GitHub Issues 评论。
+    - 若没有本文 Issue，您可以使用 Comment 模版新建。
+  candidates:
+#    - valine
+    - utterances
+utterances:
+  enable: true
+#  src: https://utteranc.es/client.js
+  repo: ssmzhn/ssmzhn.github.io
+  issue-term: pathname
+  # label: comment
+  theme: github-light
+#  crossorigin: anonymous
+
+#<script src="https://utteranc.es/client.js"
+#        repo="ssmzhn/ssmzhn.github.io"
+#        issue-term="pathname"
+#        theme="github-light"
+#        crossorigin="anonymous"
+#        async>
+#</script>
