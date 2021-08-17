@@ -117,3 +117,18 @@ footer:
 
 wordcloud:
   enable: true
+
+# 关闭 highlight
+highlight:
+  enable: false
+# 启用 prism
+prismjs:
+  enable: true
+  preprocess: true
+  line_number: false
+  tab_replace: ""
+codeblock:
+  copy_btn: true
+  prismjs:
+    light: default
+    dark: tomorrow
