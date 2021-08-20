@@ -40,6 +40,13 @@ links:
     desc: 可爱~想rua~
     color: "#dbadaf"
     email: me@ilyfairy.com
+  - url: https://ssmzhn.github.io/xiaoyuan-blog
+    avatar: https://q1.qlogo.cn/g?b=qq&nk=3627046040&s=640
+    name: 小源151
+    blog: 小源151的blog
+    desc: 大主播太牛了
+    email: xiaoyuan2233666@163.com
+
 placeholder: 还没想好说些什么 # 默认对友链的描述
 tip: 友链加载中～如失败请刷新重试～ 
 ---
