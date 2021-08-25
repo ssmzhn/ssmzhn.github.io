@@ -13,7 +13,7 @@ links:
     desc: 池塘gg的小站，快来玩罢
     color: "#3c4d67" # 代表色
     email: bilibilichitang@hotmail.com
-  - url: https://win10memz.github.io
+  - url: https://onear233.github.io
     avatar: https://s1.ax1x.com/2020/06/27/N6dm5R.jpg
     name: One_AR
     blog: One_AR的小站
@@ -26,7 +26,7 @@ links:
     blog: None的小站
     desc: 一个沙雕
     color: "#c3907e"
-    email: oh@myshit.code
+    email: oh@myshit.codes
   - url: https://kiteab.awa.im
     avatar: https://kiteab.awa.im/images/avatar.png
     name: KiteAB

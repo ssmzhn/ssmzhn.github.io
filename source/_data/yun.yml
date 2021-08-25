@@ -132,3 +132,15 @@ codeblock:
   prismjs:
     light: default
     dark: tomorrow
+katex:
+  copy_tex: true
+  global: false
+
+#默哀
+mourn:
+  enable: true
+  days:
+    - "4-4"
+    - "12-13"
+    - "9-18"
+    - "5-12"
