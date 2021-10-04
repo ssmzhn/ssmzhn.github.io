@@ -206,3 +206,9 @@ $$ W_{额外}=fs $$
 
 机械效率：
 $$ η=\\frac {W_{有用}}{W_总} \\times 100 \\% =\\frac {Gh}{Fs} \\times 100 \\% $$
+
+## 能
+比热容：
+$$ c=\\frac{Q}{m\\Delta t} $$
+即
+$$ Q=cm\\Delta t $$
