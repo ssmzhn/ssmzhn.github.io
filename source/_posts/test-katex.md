@@ -212,3 +212,8 @@ $$ η=\\frac {W_{有用}}{W_总} \\times 100 \\% =\\frac {Gh}{Fs} \\times 100 \\
 $$ c=\\frac{Q}{m\\Delta t} $$
 即
 $$ Q=cm\\Delta t $$
+
+## 电
+欧姆定律：
+$$ I=\\frac{U}{R} $$
+
