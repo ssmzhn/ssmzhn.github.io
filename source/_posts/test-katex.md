@@ -217,3 +217,17 @@ $$ Q=cm\\Delta t $$
 欧姆定律：
 $$ I=\\frac{U}{R} $$
 
+
+# 化学
+
+碳，硫，磷，铁，镁，氢气在氧气中燃烧：
+
+$ C + O2 \\xlongequal{点燃} CO2 $
+
+$$ \\ce{S + O2 \\xlongequal{点燃} SO2} $$
+
+$$ \\ce{4P + 5O2 \\xlongequal{点燃} 2P2O5} $$
+
+$$ \\ce{3Fe + 2O2 \\xlongequal{点燃} Fe3O4} $$
+
+$$ \\ce{2Mg + O2 \\xlongequal{点燃} 2MgO} $$
