@@ -131,7 +131,7 @@ $$ F_浮=F_{向上}-F_{向下} $$
 ## 简单机械和功
 ### 杠杆
 杠杆平衡条件：
-$$ F_1l_1=F_2l_2 $$
+$$ F\_1l\_1=F\_2l\_2 $$
 
 ### 滑轮（组）
 > $ n $为吊起动滑轮绳子股数
@@ -214,10 +214,41 @@ $$ c=\\frac{Q}{m\\Delta t} $$
 $$ Q=cm\\Delta t $$
 
 ## 电
-欧姆定律：
+### 欧姆定律
 $$ I=\\frac{U}{R} $$
+变形得：
+$$ U=IR $$
+$$ R=\\frac{U}{I} $$
 
+> 单位：
+> 电流 $I$ ：$\\mathrm{A}$
+> 电压 $U$ ：$\\mathrm{V}$
+> 电阻 $R$ ：$\\mathrm{\\Omega}$
+> 可得：$ 1 \\mathrm{V} = 1 \\mathrm{A \\cdot \\Omega} $
 
+### 电功与电热
+#### 电功
+$$ W=UIt $$
+> 单位：
+> 电功 $W$ ：$\\mathrm{J}$ 或 $\\mathrm{kW \\cdot h}$
+> 电压 $U$ ：$\\mathrm{V}$
+> 电流 $I$ ：$\\mathrm{A}$
+> 时间 $t$ ：$\\mathrm{s}$
+> 可得：$ 1 \\mathrm{J} = 1 \\mathrm{V \\cdot A \\cdot s} $
+
+由欧姆定律 $ I=\\frac{U}{R} $ 得：
+$$ W=I^2Rt $$
+$$ W=\\frac{U^2}{R}t $$
+> 这两个公式只适用于纯电阻（无电动机）电路。
+
+#### 电热
+$$ Q=I^2Rt $$
+由欧姆定律 $ I=\\frac{U}{R} $ 得：
+$$ W=I^2Rt $$
+$$ W=\\frac{U^2}{R}t $$
+> 这两个公式只适用于纯电阻（无电动机）电路。
+
+<!--
 # 化学
 
 碳，硫，磷，铁，镁，氢气在氧气中燃烧：
@@ -231,3 +262,5 @@ $$ \\ce{4P + 5O2 \\xlongequal{点燃} 2P2O5} $$
 $$ \\ce{3Fe + 2O2 \\xlongequal{点燃} Fe3O4} $$
 
 $$ \\ce{2Mg + O2 \\xlongequal{点燃} 2MgO} $$
+-->
+
