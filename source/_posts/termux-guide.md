@@ -21,14 +21,17 @@ tags:
 2. 对 Linux 有初步了解
 3. 手机剩余存储空间最好 ≥ 8GB
 4. 一点耐心
+
 # 安装
 Termux 是一款 Android 终端模拟器和 Linux 环境应用程序，无需 root 或设置即可直接运行。
 
 您可以在 [Github](https://github.com/termux/termux-app/releases) 或 [F-Droid](https://f-droid.org/en/packages/com.termux/) 里直接下载安装包安装。
 
 <div class="warning">
+
 > 注意：
-> 不要在 Google Play 里安装 Termux！Google Play 中 Termux 版本太低，已经停止维护
+> 不要在 Google Play 里安装 Termux！Google Play 中 Termux 版本太低，已经停止维护。
+
 </div>
 
 # 配置
@@ -73,6 +76,7 @@ Termux 上的编辑器有很多，任选其一即可。我个人用 `vim` 习惯
  - nvim
  - emacs
  - nano
+
 等等。
 
 ### 编译/解释器
@@ -84,7 +88,7 @@ pkg i <软件包>
 即可，软件包和在 Linux 上是一样一样的。
 如：
 |软件包|说明|
-|:--:|:--|
+|:-------:|:-------|
 |`clang`, `gcc`|用于编译 C, C++ 等语言|
 |`python`|用于解释运行 Python 语言|
 |`openjdk-17`|用于编译 Java 等语言|
@@ -131,5 +135,7 @@ tmoe m
 选字体，这里推荐 `JetBrains Mono Regular`（就是本文用的等宽字体），输入`25`，回车继续。
 
 这样，宁的炫酷 zsh 就装完辣！
+
 ---
+
 先写到这。（摸了一天，好累哦.jpg）
