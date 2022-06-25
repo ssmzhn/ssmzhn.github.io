@@ -138,6 +138,62 @@ tmoe m
 
 这样，宁的炫酷 zsh 就装完辣！
 
+# 正式使用
+## 整体布局
+[![jkWLdA.jpg](https://s1.ax1x.com/2022/06/25/jkWLdA.jpg)](https://imgtu.com/i/jkWLdA)
+
+注意看这幅图。
+最下方是快捷键，光标处是您的终端。
+
+[![jkfKL4.jpg](https://s1.ax1x.com/2022/06/25/jkfKL4.jpg)](https://imgtu.com/i/jkfKL4)
+从屏幕最左侧往右滑，上面的`[1]`，`[2]`等是正在运行的进程，您可以长按来给某一进程命名。
+
+下方的 `KEYBOARD` 为弹出和收起键盘，`NEW SESSION` 为开启新的进程。
+
+## Termux 的亿些小技巧
+1. 双指缩放屏幕可以放大和缩小文字；
+2. 下方的快捷键可以自定义，配置文件在 `~/.termux/termux.properties`；
+3. 下方快捷键左滑出现一个对话框，可以在其中输入内容，按回车发送到终端。
+4. 亿些快捷键：
+    - Ctrl + A -> 将光标移动到行首
+	- Ctrl + C -> 中止当前进程
+	- Ctrl + D -> 注销终端会话
+	- Ctrl + E -> 将光标移动到行尾
+	- Ctrl + K -> 从光标删除到行尾
+	- Ctrl + U -> 从光标删除到行首
+	- Ctrl + L -> 清除终端
+	- Ctrl + Z -> 挂起（发送 SIGTSTP 到）当前进程
+	- Ctrl + alt + C -> 打开新会话（仅适用于 黑客键盘）
+
+	> 注：音量- 相当于 Ctrl。
+5. 环境变量 `$PREFIX` 的值为 `/data/data/com.termux/files/usr`，
+`$PREFIX\etc\profile` 即为初始化脚本，修改该脚本即可实现新建进程时自启动。
+6. 开始进程会显示问候语，默认问候语如下：
+```
+Welcome to Termux!
+
+Communities: https://termux.org/community
+Gitter chat: https://gitter.im/termux/termux
+IRC channel: #termux on libera.chat
+
+Working with packages:
+
+ * Search packages:   pkg search <query>
+ * Install a package: pkg install <package>
+ * Upgrade packages:  pkg upgrade
+
+Subscribing to additional repositories:
+
+ * Root:     pkg install root-repo
+ * X11:      pkg install x11-repo
+
+Report issues at https://termux.org/issues
+```
+
+太长了，对吧？
+该文本文件保存在 `$PREFIX/etc/motd`，修改即可。
+
+
 ---
 
 先写到这。（摸了一天，好累哦.jpg）
