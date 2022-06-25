@@ -123,7 +123,7 @@ html.dark {
   --hty-secondary-text-color: #555;
   --post-block-bg-color: #fff;
   --smc-link-color: #0078e7;
-  --yun-bg-image: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg");
+  --yun-bg-image: url("https://cdn.yunyoujun.cn/img/bg/stars-timing-0-blur-30px.jpg");
   --banner-line-color: #000;
   --banner-char-color: #000;
 }
@@ -134,7 +134,7 @@ html.dark {
   --hty-secondary-text-color: #eee;
   --post-block-bg-color: #1b1f2e;
   --smc-link-color: #3ca1ff;
-  --yun-bg-image: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/galaxy.jpg");
+  --yun-bg-image: url("https://cdn.yunyoujun.cn/img/bg/galaxy.jpg");
   --banner-line-color: #fff;
   --banner-char-color: #fff;
   --banner-char-bg-color: rgba(0,0,0,0.5);
@@ -190,7 +190,7 @@ html.dark {
   color: #000;
 }
 body {
-  font-family: 'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif;
+  font-family: Saira, 'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -338,6 +338,44 @@ body::before {
   align-items: center;
   height: 100vh;
 }
+#banner .char {
+  font-family: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
+  font-size: var(--banner-char-size, 1rem);
+  font-weight: 900;
+  background-color: var(--banner-char-bg-color);
+  line-height: 1;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-delay: 0s;
+}
+#banner .char:hover {
+  color: var(--banner-char-hover-color);
+  background-color: var(--banner-char-color);
+}
+#banner .char-left,
+#banner .char-right {
+  display: flex;
+  color: var(--banner-char-color);
+  opacity: 0;
+}
+#banner .char-left {
+  border-left: 1px solid var(--banner-line-color);
+  border-right: 0px solid rgba(0,120,231,0.1);
+  border-right-width: 0px;
+  animation-duration: 0.4s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+#banner .char-right {
+  border-left: 0px solid rgba(0,120,231,0.1);
+  border-right: 1px solid var(--banner-line-color);
+  border-left-width: 0px;
+  animation-duration: 0.4s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
 .banner-char-container {
   display: flex;
   flex-direction: column;
@@ -356,44 +394,6 @@ body::before {
 .vertical-line-bottom {
   position: absolute;
   bottom: 0;
-}
-.char {
-  font-family: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
-  font-size: var(--banner-char-size, 1rem);
-  font-weight: 900;
-  background-color: var(--banner-char-bg-color);
-  line-height: 1;
-  transition-property: all;
-  transition-duration: 0.3s;
-  transition-delay: 0s;
-}
-.char:hover {
-  color: var(--banner-char-hover-color);
-  background-color: var(--banner-char-color);
-}
-.char-left,
-.char-right {
-  display: flex;
-  color: var(--banner-char-color);
-  opacity: 0;
-}
-.char-left {
-  border-left: 1px solid var(--banner-line-color);
-  border-right: 0px solid rgba(0,120,231,0.1);
-  border-right-width: 0px;
-  animation-duration: 0.4s;
-  animation-delay: 0.4s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
-}
-.char-right {
-  border-left: 0px solid rgba(0,120,231,0.1);
-  border-right: 1px solid var(--banner-line-color);
-  border-left-width: 0px;
-  animation-duration: 0.4s;
-  animation-delay: 0.4s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
 }
 .cloud {
   display: flex;
@@ -1397,7 +1397,7 @@ body::before {
   background: rgba(0,120,231,0.3);
 }
 .post-collapse .collection-title .archive-year {
-  font-family: 'Source Code Pro', Consolas, Monaco, SFMono-Regular, 'Ubuntu Mono', Menlo, monospace;
+  font-family: 'JetBrains Mono', 'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace;
   color: #0078e7;
   margin: 0 1.5rem;
 }
@@ -1461,7 +1461,7 @@ body::before {
   margin-right: 0.3rem;
 }
 .post-collapse .post-header .post-meta {
-  font-family: 'Source Code Pro', Consolas, Monaco, SFMono-Regular, 'Ubuntu Mono', Menlo, monospace;
+  font-family: 'JetBrains Mono', 'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace;
   font-size: 1rem;
   margin: 1rem 0 1rem 1.2rem;
   white-space: nowrap;
@@ -1535,11 +1535,11 @@ body::before {
 .markdown-body {
   color: var(--hty-text-color);
   font-weight: 400;
-  font-family: 'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif;
+  font-family: Saira, 'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif;
 }
 .markdown-body code,
 .markdown-body pre {
-  font-family: 'Source Code Pro', Consolas, Monaco, SFMono-Regular, 'Ubuntu Mono', Menlo, monospace;
+  font-family: 'JetBrains Mono', 'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace;
 }
 .markdown-body blockquote {
   padding: 0.6rem 1rem;
@@ -1783,7 +1783,7 @@ body::before {
   color: #db2828;
 }
 .post-toc ol .toc-number {
-  font-family: 'Source Code Pro', Consolas, Monaco, SFMono-Regular, 'Ubuntu Mono', Menlo, monospace;
+  font-family: 'JetBrains Mono', 'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace;
 }
 .post-toc ol .toc-child {
   font-size: 1rem;
@@ -1799,7 +1799,7 @@ body::before {
   max-height: 10000px;
 }
 :root {
-  --sidebar-bg-image: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn@master/img/bg/alpha-stars-timing-1.webp");
+  --sidebar-bg-image: url("https://cdn.yunyoujun.cn/img/bg/alpha-stars-timing-1.webp");
 }
 #menu-btn {
   display: none;

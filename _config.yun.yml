@@ -144,3 +144,22 @@ mourn:
     - "12-13"
     - "9-18"
     - "5-12"
+
+head:
+  css:
+    fonts: https://fonts.loli.net/css?family=Saira
+
+font:
+  cdn:
+    enable: true
+    lib:
+      - https://fonts.loli.net/css?family=Saira
+  serif:
+    family: '''Songti SC'', ''Noto Serif SC'', STZhongsong, STKaiti, KaiTi, Roboto, serif'
+    weight: 900
+  sans_serif:
+    family: 'Saira, ''PingFang SC'', ''Microsoft YaHei'', Roboto, Arial, sans-serif'
+    weight: 400
+  monospace:
+    family: '''JetBrains Mono'', ''Source Code Pro'', ''Courier New'', Courier, Consolas, Monaco, monospace'
+
