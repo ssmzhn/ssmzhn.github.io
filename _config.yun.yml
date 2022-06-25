@@ -118,15 +118,6 @@ footer:
 wordcloud:
   enable: true
 
-# 关闭 highlight
-highlight:
-  enable: false
-# 启用 prism
-prismjs:
-  enable: true
-  preprocess: true
-  line_number: false
-  tab_replace: ""
 codeblock:
   copy_btn: true
 katex:
@@ -144,13 +135,16 @@ mourn:
 
 head:
   css:
-    fonts: https://fonts.loli.net/css?family=Saira
+    fonts: 
+      - https://fonts.loli.net/css?family=Saira
+      - https://fonts.loli.net/css?family=JetBrains%20Mono
 
 font:
   cdn:
     enable: true
     lib:
       - https://fonts.loli.net/css?family=Saira
+      - https://fonts.loli.net/css?family=JetBrains%20Mono
   serif:
     family: '''Songti SC'', ''Noto Serif SC'', STZhongsong, STKaiti, KaiTi, Roboto, serif'
     weight: 900
