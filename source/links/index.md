@@ -48,8 +48,8 @@ links:
     email: xiaoyuan2233666@163.com
   - url: http://yidaozhan.top
     avatar: https://q1.qlogo.cn/g?b=qq&nk=3526514925&s=640
-    blog: 一刀斩的博客
-    desc: 是一刀斩哒❤️
+    blog: 一刀斩の小窝
+    desc: 是一刀斩哒 ♡
     color: "#3C5B78"
 
 placeholder: 还没想好说些什么 # 默认对友链的描述

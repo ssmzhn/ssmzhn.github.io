@@ -13,8 +13,7 @@ banner:
     color: "white"
   go_down:
     enable: true
-    icon: icon-arrow-down-s-line
-
+    icon: ri:arrow-down-s-line
 social:
   #  - name: QQ
   #    link: https://ti.qq.com/open_qq/index2.html?url=mqqapi%3a%2f%2fuserprofile%2ffriend_profile_card%3fsrc_type%3dweb%26version%3d1.0%26source%3d2%26uin%3d3285956207
@@ -22,7 +21,7 @@ social:
   #    color: "#12B7F5"
   - name: GitHub
     link: https://github.com/ssmzhn
-    icon: icon-github-line
+    icon: ri:github-line
     color: "#6e5494"
 #  - name: 微博
 #    link: https://weibo.com/jizhideyunyoujun
@@ -34,15 +33,15 @@ social:
 #    color: "#007722"
   - name: 网易云音乐
     link: http://music.163.com/m/user/home?id=1790526375
-    icon: icon-netease-cloud-music-line
+    icon: ri:netease-cloud-music-line
     color: "#C20C0C"
   - name: 知乎
     link: https://www.zhihu.com/people/she-sha-ming-zi-hao-ni/
-    icon: icon-zhihu-line
+    icon: ri:zhihu-line
     color: "#0084FF"
   - name: 哔哩哔哩
     link: https://b23.tv/n2PyuM
-    icon: icon-bilibili-line
+    icon: ri:bilibili-line
     color: "#FF8EB3"
   # - name: POPI
   #   link: https://www.popiapp.cn/elpsycn
@@ -54,11 +53,11 @@ social:
   #    color: "#1AAD19"
   - name: Twitter
     link: https://twitter.com/ssmzhn12138
-    icon: icon-twitter-line
+    icon: ri:twitter-line
     color: "#1da1f2"
   - name: Telegram
     link: https://t.me/NameSetter
-    icon: icon-telegram-line
+    icon: ri:telegram-line
     color: "#0088CC"
   #  - name: Telegram Channel
   #    link: https://t.me/elpsycn
@@ -67,7 +66,7 @@ social:
   #    color: "#0088CC"
   - name: E-Mail
     link: mailto:ssmzhn@163.com
-    icon: icon-mail-line
+    icon: ri:mail-line
     color: "#8E71C1"
       #  - name: Travelling
       #    link: https://travellings.link
@@ -78,7 +77,7 @@ reward:
 pages:
   - name: 小伙伴们
     url: /links
-    icon: icon-genderless-line
+    icon: ri:genderless-line
     color: dodgerblue
 notice:
   enable: true
@@ -153,4 +152,5 @@ font:
     weight: 400
   monospace:
     family: '''JetBrains Mono'', ''Source Code Pro'', ''Courier New'', Courier, Consolas, Monaco, monospace'
+
 
