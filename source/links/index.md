@@ -51,7 +51,11 @@ links:
     blog: 一刀斩の小窝
     desc: 是一刀斩哒 ♡
     color: "#3C5B78"
-
+  - url: http://blog.midreamsheep.live
+    avatar: https://q1.qlogo.cn/g?b=qq&nk=2493853707&s=640
+    blog: midreamsheep's blog
+    desc: 啥都会的大佬（
+    color: "#42485B"
 placeholder: 还没想好说些什么 # 默认对友链的描述
 tip: 友链加载中～如失败请刷新重试～ 
 ---
