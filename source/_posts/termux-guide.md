@@ -199,7 +199,7 @@ tmoe m
 	- Ctrl + alt + C -> 打开新会话（仅适用于 黑客键盘）
 	> 注：音量- 相当于 Ctrl。
 5. 环境变量 `$PREFIX` 的值为 `/data/data/com.termux/files/usr`
-6. `$PREFIX/etc/profile` 即为初始化脚本，修改该脚本即可实现新建进程时自启动。
+6. `$PREFIX/etc/profile` 即为初始化脚本，修改该脚本即可实现新建会话时自启动。
 7. 开始进程会显示问候语，默认问候语如下：
 
 ```
