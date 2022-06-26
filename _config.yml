@@ -99,8 +99,8 @@ theme: yun
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 
-deploy:
-    type: git
-    repo: git@github.com:ssmzhn/ssmzhn.github.io
-    branch: master # 默认使用 master 分支
-    message: Update Hexo Static Content # 你可以自定义此次部署更新的说明
+# deploy:
+#     type: git
+#    repo: git@github.com:ssmzhn/ssmzhn.github.io
+#    branch: master # 默认使用 master 分支
+#    message: Update Hexo Static Content # 你可以自定义此次部署更新的说明
