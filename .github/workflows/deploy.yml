@@ -26,5 +26,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           commit_message: ${{ github.event.head_commit.message }}
-          publish_branch: master
+          publish_branch: pages
           force_orphan: true
