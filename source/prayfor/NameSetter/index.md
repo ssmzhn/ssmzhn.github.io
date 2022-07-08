@@ -20,5 +20,5 @@ Updated on 2022.7.8
 
 上网课力（悲
 
-!<https://img.duotegame.com/article/contents/2022/04/21/small_2022042161221777.jpg>
+![摆出一副臭脸.jpg](https://img.duotegame.com/article/contents/2022/04/21/small_2022042161221777.jpg)
 
