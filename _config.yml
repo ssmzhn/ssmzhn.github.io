@@ -104,3 +104,17 @@ theme: yun
 #    repo: git@github.com:ssmzhn/ssmzhn.github.io
 #    branch: master # 默认使用 master 分支
 #    message: Update Hexo Static Content # 你可以自定义此次部署更新的说明
+#
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:
