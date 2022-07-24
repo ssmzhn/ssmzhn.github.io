@@ -138,6 +138,7 @@ head:
     fonts: 
       - https://fonts.loli.net/css?family=Saira
       - https://fonts.loli.net/css?family=JetBrains%20Mono
+      - https://fonts.loli.net/css?family=Comic%20Sans%20MS
 
 font:
   cdn:
@@ -145,11 +146,12 @@ font:
     lib:
       - https://fonts.loli.net/css?family=Saira
       - https://fonts.loli.net/css?family=JetBrains%20Mono
+      - https://fonts.loli.net/css?family=Comic%20Sans%20MS
   serif:
     family: '''Songti SC'', ''Noto Serif SC'', STZhongsong, STKaiti, KaiTi, Roboto, serif'
     weight: 900
   sans_serif:
-    family: 'Saira, ''PingFang SC'', ''Microsoft YaHei'', Roboto, Arial, sans-serif'
+    family: '''Comic Sans MS'', Saira, ''PingFang SC'', ''Microsoft YaHei'', Roboto, Arial, sans-serif'
     weight: 400
   monospace:
     family: '''JetBrains Mono'', ''Source Code Pro'', ''Courier New'', Courier, Consolas, Monaco, monospace'
