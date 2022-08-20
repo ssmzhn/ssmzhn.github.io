@@ -9,6 +9,7 @@ tags:
 
 数据来源: 萌娘百科
 ## Chapter Legacy 过去的章节
+
 ### Glaciaxion
 
 ![](https://img.moegirl.org.cn/common/thumb/0/0b/Glaciaxion_Phigros.png/300px-Glaciaxion_Phigros.png)
@@ -429,6 +430,7 @@ tags:
     - 物量: 1028
     - 谱师: 分化者『RageS』
 ## Chapter 4 管道迷宫
+
 ### Sultan Rage
 
 ![](https://img.moegirl.org.cn/common/thumb/0/08/Sultan_Rage_Phigros.png/300px-Sultan_Rage_Phigros.png)
@@ -564,6 +566,7 @@ tags:
     - 物量: 615
     - 谱师: Ctymax vs 阿爽
 ## Chapter 5 霓虹灯牌
+
 ### NYA!!!
 
 ![](https://img.moegirl.org.cn/common/thumb/7/78/Nya_221_Phigros.png/300px-Nya_221_Phigros.png)
@@ -744,6 +747,7 @@ tags:
     - 物量: 528
     - 谱师: 亚树见希子 & 百九十八
 ## Chapter 6 方舟蜃景
+
 ### Colorful Days
 
 ![](https://img.moegirl.org.cn/common/thumb/b/b2/Colorful_Days_Phigros.png/300px-Colorful_Days_Phigros.png)
@@ -899,6 +903,7 @@ tags:
     - 物量: 1114
     - 谱师: 断罪の剣『神』
 ## Chapter 7 时钟链接
+
 ### Clock Paradox
 
 ![](https://img.moegirl.org.cn/common/thumb/8/81/Clock_Paradox_jacket.png/300px-Clock_Paradox_jacket.png)
@@ -1054,6 +1059,7 @@ tags:
     - 物量: 1300
     - 谱师: RWND -p 16493:62786:92551
 ## Side Story 1 忘忧宫
+
 ### Ποσειδών
 
 ![](https://img.moegirl.org.cn/common/thumb/0/01/%CE%A0%CE%BF%CF%83%CE%B5%CE%B9%CE%B4%CF%8E%CE%BD_Phigros.png/300px-%CE%A0%CE%BF%CF%83%CE%B5%CE%B9%CE%B4%CF%8E%CE%BD_Phigros.png)
@@ -1184,6 +1190,7 @@ tags:
     - 物量: 1236
     - 谱师: CN_115 as "prediCameNt"
 ## Side Story 2 弭刻日
+
 ### Demiurge
 
 ![](https://img.moegirl.org.cn/common/thumb/9/96/Demiurge_Phigros.png/300px-Demiurge_Phigros.png)
@@ -1339,6 +1346,7 @@ tags:
     - 物量: 888
     - 谱师: while(TangScend=TangScend);
 ## Chapter EX-Rising Sun Traxx 精选集
+
 ### Another Me (Rising Sun Traxx)
 
 ![](https://img.moegirl.org.cn/common/thumb/6/67/Another_Me_Phigros.png/300px-Another_Me_Phigros.png)
@@ -1474,6 +1482,7 @@ tags:
     - 物量: 1156
     - 谱师: Gausbon
 ## Chapter EX-HyuN 精选集
+
 ### Infinity Heaven
 
 ![](https://img.moegirl.org.cn/common/thumb/7/78/Infinity_Heaven_Phigros.png/300px-Infinity_Heaven_Phigros.png)
@@ -1549,6 +1558,7 @@ tags:
     - 物量: 1305
     - 谱师: 無†極
 ## Chapter EX-GOOD精选集
+
 ### GOODTEK
 
 ![](https://img.moegirl.org.cn/common/thumb/e/e4/GOODTEK.png/300px-GOODTEK.png)
@@ -1674,6 +1684,7 @@ tags:
     - 物量: 1034
     - 谱师: Ctymax vs. 阿爽
 ## Chapter EX-WAVEAT 精选集
+
 ### Initialize
 
 ![](https://img.moegirl.org.cn/common/thumb/a/a0/Initialize_Phigros.png/300px-Initialize_Phigros.png)
@@ -1779,6 +1790,7 @@ tags:
     - 物量: 1650
     - 谱师: Alloces
 ## Chapter EX-Muse Dash 精选集
+
 ### XING
 
 ![](https://img.moegirl.org.cn/common/thumb/2/2c/XING_Phigros.png/300px-XING_Phigros.png)
@@ -1821,7 +1833,7 @@ tags:
   - HD
     - 定级: 11
     - 定数: 11.8
-    - 物量: 604
+	- 物量: 604
     - 谱师: Barbarianerman
   - IN
     - 定级: 14
@@ -1859,6 +1871,7 @@ tags:
     - 物量: 1444
     - 谱师: 百九十八 feat. NerSAN
 ## Chapter EX-KALPA 精选集
+
 ### Time to Night Sky (feat. Lee Yu Jin)
 
 ![](https://img.moegirl.org.cn/common/thumb/f/fc/Time_to_Night_Sky_%28feat._Lee_Yu_Jin%29_Phigros.png/300px-Time_to_Night_Sky_%28feat._Lee_Yu_Jin%29_Phigros.png)
@@ -1984,6 +1997,7 @@ tags:
     - 物量: 1026
     - 谱师: 其三 我所存在的证明
 ## Chapter EX-Lanota 精选集
+
 ### Apocalypse
 
 ![](https://img.moegirl.org.cn/common/thumb/6/69/Phisong_apocalypse.png/300px-Phisong_apocalypse.png)
@@ -2119,6 +2133,7 @@ tags:
     - 物量: 1700
     - 谱师: 百九十八
 ## 单曲精选集
+
 ### Doppelganger
 
 ![](https://img.moegirl.org.cn/common/thumb/8/86/Doppelganger_Phigros.png/300px-Doppelganger_Phigros.png)
