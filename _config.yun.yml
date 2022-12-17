@@ -151,7 +151,7 @@ font:
     family: '''Songti SC'', ''Noto Serif SC'', STZhongsong, STKaiti, KaiTi, Roboto, serif'
     weight: 900
   sans_serif:
-    family: '''Comic Sans MS'', ''PingFang SC'', ''Microsoft YaHei'', Roboto, Arial, sans-serif'
+    family: '''Saira'', ''PingFang SC'', ''Microsoft YaHei'', Roboto, Arial, sans-serif'
     weight: 400
   monospace:
     family: '''JetBrains Mono'', ''Source Code Pro'', ''Courier New'', Courier, Consolas, Monaco, monospace'
