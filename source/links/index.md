@@ -46,10 +46,11 @@ links:
     blog: 小源151的blog
     desc: 大主播太牛了
     email: xiaoyuan2233666@163.com
-  - url: http://yidaozhan.top
+  - blog: 千雪的咖啡厅
+    url: https://blog.chyk.ink/
+    desc: 浩繁星空下的一场稚嫩的梦
+    name: 斬風·千雪
     avatar: https://q1.qlogo.cn/g?b=qq&nk=3526514925&s=640
-    blog: 一刀斩の小窝
-    desc: 是一刀斩哒 ♡
     color: "#3C5B78"
   - url: http://blog.midreamsheep.live
     avatar: https://q1.qlogo.cn/g?b=qq&nk=2493853707&s=640
