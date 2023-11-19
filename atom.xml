@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>NameSetter&#39;s Blog</title>
+  <icon>https://ssmzhn.vercel.app/icon.png</icon>
+  <subtitle>一个专靠CV运营的博客罢了</subtitle>
+  <link href="https://ssmzhn.vercel.app/atom.xml" rel="self"/>
+  
+  <link href="https://ssmzhn.vercel.app/"/>
+  <updated>2023-11-19T04:37:04.647Z</updated>
+  <id>https://ssmzhn.vercel.app/</id>
+  
+  <author>
+    <name>NameSetter</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>完全自杀手册</title>
+    <link href="https://ssmzhn.vercel.app/2023/08/06/complete_suicide_manual/"/>
+    <id>https://ssmzhn.vercel.app/2023/08/06/complete_suicide_manual/</id>
+    <published>2023-08-06T14:00:00.000Z</published>
+    <updated>2023-11-19T04:37:04.647Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;完全自杀手册&quot;&gt;&lt;a href=&quot;#完全自杀手册&quot; class=&quot;headerlink&quot; title=&quot;完全自杀手册&quot;&gt;&lt;/a&gt;完全自杀手册&lt;/h1&gt;&lt;p&gt;转载自 &lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="自杀" scheme="https://ssmzhn.vercel.app/tags/%E8%87%AA%E6%9D%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TeX 指南</title>
+    <link href="https://ssmzhn.vercel.app/2022/12/17/tex-guide/"/>
+    <id>https://ssmzhn.vercel.app/2022/12/17/tex-guide/</id>
+    <published>2022-12-17T12:44:05.000Z</published>
+    <updated>2022-12-17T14:10:51.736Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;很多时候，我们需要在一些评论区里面输入数学公式，通常这些评论系统都支持简单的 TeX。这篇文章我将介绍一些简单的 TeX 语法，供大家参考。&lt;/p&gt;
+&lt;h1 id=&quot;评论区嵌入方式&quot;&gt;&lt;a href=&quot;#评论区嵌入方式&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Phigros v2.3.3 曲目信息</title>
+    <link href="https://ssmzhn.vercel.app/2022/08/20/chart/"/>
+    <id>https://ssmzhn.vercel.app/2022/08/20/chart/</id>
+    <published>2022-08-20T09:29:00.000Z</published>
+    <updated>2022-08-20T11:14:04.473Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Phigros-v2-3-3-曲目信息&quot;&gt;&lt;a href=&quot;#Phigros-v2-3-3-曲目信息&quot; class=&quot;headerlink&quot; title=&quot;Phigros v2.3.3 曲目信息&quot;&gt;&lt;/a&gt;Phigros v2.3.3</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://ssmzhn.vercel.app/2022/08/20/hello-world/"/>
+    <id>https://ssmzhn.vercel.app/2022/08/20/hello-world/</id>
+    <published>2022-08-20T08:31:09.853Z</published>
+    <updated>2022-08-20T08:31:09.853Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Termux 使用指南</title>
+    <link href="https://ssmzhn.vercel.app/2022/06/25/termux-guide/"/>
+    <id>https://ssmzhn.vercel.app/2022/06/25/termux-guide/</id>
+    <published>2022-06-25T08:50:50.000Z</published>
+    <updated>2022-08-20T11:10:33.483Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;很多时候我们会遇到这种情况：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;某群里大佬：快来试试这串代码，github.com&amp;#x2F;1145141919810…&lt;br&gt;我：这东西干嘛的？&lt;br&gt;大佬：你运行了就知道了（&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;但你身边没有</summary>
+        
+      
+    
+    
+    
+    
+    <category term="随笔" scheme="https://ssmzhn.vercel.app/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>草</title>
+    <link href="https://ssmzhn.vercel.app/2022/01/01/waaru/"/>
+    <id>https://ssmzhn.vercel.app/2022/01/01/waaru/</id>
+    <published>2022-01-01T10:55:55.000Z</published>
+    <updated>2022-08-20T08:31:09.853Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;天朝之言&quot;&gt;&lt;a href=&quot;#天朝之言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>蚌埠</title>
+    <link href="https://ssmzhn.vercel.app/2021/10/04/beng-bu/"/>
+    <id>https://ssmzhn.vercel.app/2021/10/04/beng-bu/</id>
+    <published>2021-10-04T10:27:59.000Z</published>
+    <updated>2022-08-20T08:31:09.853Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;😅&quot;&gt;&lt;a href=&quot;#😅&quot; class=&quot;headerlink&quot; title=&quot;😅&quot;&gt;&lt;/a&gt;😅&lt;/h1&gt;&lt;h2 id=&quot;😅-1&quot;&gt;&lt;a href=&quot;#😅-1&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>《一元四次方程的求根公式》</title>
+    <link href="https://ssmzhn.vercel.app/2021/09/30/quartic-equation-of-one-unknown/"/>
+    <id>https://ssmzhn.vercel.app/2021/09/30/quartic-equation-of-one-unknown/</id>
+    <published>2021-09-30T11:49:07.000Z</published>
+    <updated>2022-08-20T08:31:09.853Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;谁展开$\Delta$谁傻逼&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;令&lt;/p&gt;
+&lt;p&gt;$$ \Delta _1&amp;#x3D;c^2-3bd+12ae $$&lt;/p&gt;
+&lt;p&gt;$$ \Delta</summary>
+        
+      
+    
+    
+    
+    
+    <category term="test" scheme="https://ssmzhn.vercel.app/tags/test/"/>
+    
+    <category term="测试" scheme="https://ssmzhn.vercel.app/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>论“抢答”</title>
+    <link href="https://ssmzhn.vercel.app/2021/09/20/diary20210920/"/>
+    <id>https://ssmzhn.vercel.app/2021/09/20/diary20210920/</id>
+    <published>2021-09-20T07:53:49.000Z</published>
+    <updated>2022-08-20T08:31:09.853Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;一个有教养的人，必定从心里愿意尊重别人，也善于尊重别人。对他来说，礼貌待人不仅习以为常，轻松自然，而且能让他心情愉快。有教养的人对别人一律谦让和礼让，无论接触的人年长还是年幼，是社会贤达还是平民百姓。&lt;/em&gt;&lt;br&gt;–《论教养》利哈乔夫&lt;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="随笔" scheme="https://ssmzhn.vercel.app/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+    <category term="日记" scheme="https://ssmzhn.vercel.app/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Katex测试</title>
+    <link href="https://ssmzhn.vercel.app/2021/08/25/test-katex/"/>
+    <id>https://ssmzhn.vercel.app/2021/08/25/test-katex/</id>
+    <published>2021-08-25T04:18:06.000Z</published>
+    <updated>2022-08-20T11:10:33.493Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;本页面来测试一下Katex（逃）&lt;br&gt;&lt;del&gt;就是不想认真写博客&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;鉴于本人只有小学学历&lt;del&gt;（指拿到了小学毕业证书）&lt;/del&gt;所以只展示本人会的（&lt;/p&gt;
+&lt;h1 id=&quot;数学&quot;&gt;&lt;a href=&quot;#数学&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="test" scheme="https://ssmzhn.vercel.app/tags/test/"/>
+    
+    <category term="测试" scheme="https://ssmzhn.vercel.app/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python学习随笔</title>
+    <link href="https://ssmzhn.vercel.app/2021/08/17/Python%E5%AD%A6%E4%B9%A0%E9%9A%8F%E7%AC%94/"/>
+    <id>https://ssmzhn.vercel.app/2021/08/17/Python%E5%AD%A6%E4%B9%A0%E9%9A%8F%E7%AC%94/</id>
+    <published>2021-08-17T00:08:21.000Z</published>
+    <updated>2022-08-20T08:31:09.853Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;开始使用Python&quot;&gt;&lt;a href=&quot;#开始使用Python&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Python随笔" scheme="https://ssmzhn.vercel.app/categories/Python%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="Python" scheme="https://ssmzhn.vercel.app/tags/Python/"/>
+    
+    <category term="学习" scheme="https://ssmzhn.vercel.app/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="随笔" scheme="https://ssmzhn.vercel.app/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>A test blog</title>
+    <link href="https://ssmzhn.vercel.app/2021/08/15/blog/"/>
+    <id>https://ssmzhn.vercel.app/2021/08/15/blog/</id>
+    <published>2021-08-15T14:05:16.000Z</published>
+    <updated>2022-08-20T08:31:09.853Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;一个奇怪的一级标题&quot;&gt;&lt;a href=&quot;#一个奇怪的一级标题&quot; class=&quot;headerlink&quot; title=&quot;一个奇怪的一级标题&quot;&gt;&lt;/a&gt;一个奇怪的一级标题&lt;/h1&gt;&lt;h2 id=&quot;一个奇怪的二级标题&quot;&gt;&lt;a href=&quot;#一个奇怪的二级标题&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="test" scheme="https://ssmzhn.vercel.app/tags/test/"/>
+    
+    <category term="测试" scheme="https://ssmzhn.vercel.app/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+</feed>

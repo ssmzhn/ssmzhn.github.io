@@ -1,0 +1,339 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0078E7"><meta name="author" content="NameSetter"><meta name="copyright" content="NameSetter"><meta name="generator" content="Hexo 6.3.0"><meta name="theme" content="hexo-theme-yun"><title>Termux 使用指南 | NameSetter's Blog</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&amp;display=swap" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fonts.loli.net/css?family=Saira" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fonts.loli.net/css?family=JetBrains%20Mono" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fonts.loli.net/css?family=Comic%20Sans%20MS" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/star-markdown-css@0.4.1/dist/yun/yun-markdown.min.css"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/prism-theme-vars/base.css"><script src="https://fastly.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>function initScrollReveal() {
+  [".post-card",".markdown-body img"].forEach((target)=> {
+    ScrollReveal().reveal(target);
+  })
+}
+document.addEventListener("DOMContentLoaded", initScrollReveal);
+document.addEventListener("pjax:success", initScrollReveal);
+</script><link rel="icon" type="image/svg+xml" href="/yun.svg"><link rel="mask-icon" href="/yun.svg" color="#0078E7"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><link rel="preconnect" href="https://fastly.jsdelivr.net/npm/" crossorigin><script id="yun-config">
+    window.Yun = {}
+    window.CONFIG = {"hostname":"ssmzhn.vercel.app","root":"/","title":"臭臭の小站","version":"1.10.9","mode":"auto","copycode":true,"page":{"isPost":true},"i18n":{"placeholder":"搜索...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）"},"anonymous_image":"https://cdn.yunyoujun.cn/img/avatar/none.jpg","say":{"api":"https://el-bot-api.vercel.app/api/words/young"},"fireworks":{"colors":null},"vendors":{"host":"https://fastly.jsdelivr.net/npm/","darken":"https://fastly.jsdelivr.net/npm/darken@1.5.0"}};
+  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/hexo-theme-yun.js" type="module"></script><link rel="alternate" href="/atom.xml" title="NameSetter's Blog" type="application/atom+xml"><link rel="stylesheet" href="[&quot;https://fonts.loli.net/css?family=Saira&quot;,&quot;https://fonts.loli.net/css?family=JetBrains%20Mono&quot;,&quot;https://fonts.loli.net/css?family=Comic%20Sans%20MS&quot;]"><meta name="description" content="很多时候我们会遇到这种情况：  某群里大佬：快来试试这串代码，github.com&#x2F;1145141919810…我：这东西干嘛的？大佬：你运行了就知道了（  但你身边没有电脑，怎么办呢？于是你摸出了手机，打开了龟速的 GitHub，等待着下载进度条缓缓走完。然后你打开酷安，搜索一个手机能用的编译器 App，打开源代码，编译，运行。 可是大多数这类软件不仅画风犹如三星堆出土，而且手感稀烂，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Termux 使用指南">
+<meta property="og:url" content="https://ssmzhn.vercel.app/2022/06/25/termux-guide/index.html">
+<meta property="og:site_name" content="NameSetter&#39;s Blog">
+<meta property="og:description" content="很多时候我们会遇到这种情况：  某群里大佬：快来试试这串代码，github.com&#x2F;1145141919810…我：这东西干嘛的？大佬：你运行了就知道了（  但你身边没有电脑，怎么办呢？于是你摸出了手机，打开了龟速的 GitHub，等待着下载进度条缓缓走完。然后你打开酷安，搜索一个手机能用的编译器 App，打开源代码，编译，运行。 可是大多数这类软件不仅画风犹如三星堆出土，而且手感稀烂，">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s1.ax1x.com/2022/06/25/jkNhX8.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2022/06/25/jkd7Ae.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2022/06/25/jkwjPJ.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2022/06/25/jk0FaD.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2022/06/25/jk01Ig.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2022/06/25/jk0NMq.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2022/06/25/jkWLdA.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2022/06/25/jkfKL4.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2022/06/26/jAt4Nd.jpg">
+<meta property="article:published_time" content="2022-06-25T08:50:50.000Z">
+<meta property="article:modified_time" content="2022-08-20T11:10:33.483Z">
+<meta property="article:author" content="NameSetter">
+<meta property="article:tag" content="随笔">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s1.ax1x.com/2022/06/25/jkNhX8.jpg"><script>(function() {
+  if (CONFIG.mode !== 'auto') return
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+  const setting = localStorage.getItem('darken-mode') || 'auto'
+  if (setting === 'dark' || (prefersDark && setting !== 'light'))
+    document.documentElement.classList.toggle('dark', true)
+})()</script></head><body><script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script><script>// Define global variable
+IconifyProviders = {
+  // Empty prefix: overwrite default API provider configuration
+  '': {
+    // Use custom API first, use Iconify public API as backup
+    resources: [
+        'https://api.iconify.design',
+    ],
+    // Wait for 1 second before switching API hosts
+    rotate: 1000,
+  },
+};</script><script defer src="https://fastly.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js" type="module"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js" type="module"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="文章目录"><span class="icon iconify" data-icon="ri:list-ordered"></span></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="站点概览"><span class="icon iconify" data-icon="ri:passport-line"></span></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="NameSetter"><img width="96" loading="lazy" src="/images/avatar.png" alt="NameSetter"></a><div class="site-author-name"><a href="/about/">NameSetter</a></div><span class="site-name">NameSetter's Blog</span><sub class="site-subtitle">一个专靠CV运营的博客罢了</sub><div class="site-description">屑作，还要描述？差不多得了</div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:home-4-line"></span></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:archive-line"></span></span><span class="site-state-item-count">12</span></a></div><div class="site-state-item"><a href="/categories/" title="分类"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:folder-2-line"></span></span><span class="site-state-item-count">1</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="site-state-item-count">7</span></a></div><a class="site-state-item hty-icon-button" target="_blank" rel="noopener" href="https://yun.yunyoujun.cn" title="文档"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:settings-line"></span></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/ssmzhn" title="GitHub" target="_blank" style="color:#6e5494"><span class="icon iconify" data-icon="ri:github-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="http://music.163.com/m/user/home?id=1790526375" title="网易云音乐" target="_blank" style="color:#C20C0C"><span class="icon iconify" data-icon="ri:netease-cloud-music-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://www.zhihu.com/people/she-sha-ming-zi-hao-ni/" title="知乎" target="_blank" style="color:#0084FF"><span class="icon iconify" data-icon="ri:zhihu-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://b23.tv/n2PyuM" title="哔哩哔哩" target="_blank" style="color:#FF8EB3"><span class="icon iconify" data-icon="ri:bilibili-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://twitter.com/ssmzhn12138" title="Twitter" target="_blank" style="color:#1da1f2"><span class="icon iconify" data-icon="ri:twitter-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://t.me/NameSetter" title="Telegram" target="_blank" style="color:#0088CC"><span class="icon iconify" data-icon="ri:telegram-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="mailto:ssmzhn@163.com" title="E-Mail" target="_blank" style="color:#8E71C1"><span class="icon iconify" data-icon="ri:mail-line"></span></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/links" title="小伙伴们" style="color:dodgerblue"><span class="icon iconify" data-icon="ri:genderless-line"></span></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><span class="icon iconify" data-icon="ri:contrast-2-line"></span></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E5%89%8D%E6%8F%90"><span class="toc-number">1.</span> <span class="toc-text">使用前提</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">2.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE"><span class="toc-number">3.</span> <span class="toc-text">配置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8D%A2%E6%BA%90"><span class="toc-number">3.1.</span> <span class="toc-text">换源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%85%E5%A4%87%E8%BD%AF%E4%BB%B6%E5%8C%85"><span class="toc-number">3.2.</span> <span class="toc-text">必备软件包</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Git"><span class="toc-number">3.2.1.</span> <span class="toc-text">Git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E8%BE%91%E5%99%A8"><span class="toc-number">3.2.2.</span> <span class="toc-text">编辑器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E8%AF%91-x2F-%E8%A7%A3%E9%87%8A%E5%99%A8"><span class="toc-number">3.2.3.</span> <span class="toc-text">编译&#x2F;解释器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82"><span class="toc-number">3.2.4.</span> <span class="toc-text">网络请求</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Z-Shell"><span class="toc-number">3.2.5.</span> <span class="toc-text">Z Shell</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%AD%A3%E5%BC%8F%E4%BD%BF%E7%94%A8"><span class="toc-number">4.</span> <span class="toc-text">正式使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B4%E4%BD%93%E5%B8%83%E5%B1%80"><span class="toc-number">4.1.</span> <span class="toc-text">整体布局</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Termux-%E7%9A%84%E4%BA%BF%E4%BA%9B%E5%B0%8F%E6%8A%80%E5%B7%A7"><span class="toc-number">4.2.</span> <span class="toc-text">Termux 的亿些小技巧</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-Termux-%E7%9A%84%E4%B8%80%E4%BA%9B%E7%9F%A5%E8%AF%86%E5%92%8C%E6%8C%87%E4%BB%A4"><span class="toc-number">4.3.</span> <span class="toc-text">Linux (Termux) 的一些知识和指令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95%E5%92%8C%E8%B7%AF%E5%BE%84"><span class="toc-number">4.3.1.</span> <span class="toc-text">目录和路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%88%B6%E7%9B%AE%E5%BD%95%E5%92%8C%E5%BD%93%E5%89%8D%E7%9B%AE%E5%BD%95%E7%9A%84%E7%AE%80%E7%95%A5%E8%A1%A8%E8%BE%BE"><span class="toc-number">4.3.2.</span> <span class="toc-text">父目录和当前目录的简略表达</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cd"><span class="toc-number">4.3.3.</span> <span class="toc-text">cd</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ls"><span class="toc-number">4.3.4.</span> <span class="toc-text">ls</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#rm"><span class="toc-number">4.3.5.</span> <span class="toc-text">rm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cp-amp-mv"><span class="toc-number">4.3.6.</span> <span class="toc-text">cp &amp; mv</span></a></li></ol></li></ol></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article" style="--smc-primary:#0078E7;"><link itemprop="mainEntityOfPage" href="https://ssmzhn.vercel.app/2022/06/25/termux-guide/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="NameSetter"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="NameSetter's Blog"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">Termux 使用指南</h1><div class="post-meta"><div class="post-time"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:calendar-line"></span></span> <time title="创建时间：2022-06-25 16:50:50" itemprop="dateCreated datePublished" datetime="2022-06-25T16:50:50+08:00">2022-06-25</time><span class="post-meta-divider">-</span><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:calendar-2-line"></span></span> <time title="修改时间：2022-08-20 19:10:33" itemprop="dateModified" datetime="2022-08-20T19:10:33+08:00">2022-08-20</time></div><div class="post-classify"><span class="post-tag"><a class="tag-item" href="/tags/%E9%9A%8F%E7%AC%94/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="tag-name">随笔</span></a></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body"><p>很多时候我们会遇到这种情况：</p>
+<blockquote>
+<p>某群里大佬：快来试试这串代码，github.com&#x2F;1145141919810…<br>我：这东西干嘛的？<br>大佬：你运行了就知道了（</p>
+</blockquote>
+<p>但你身边没有电脑，怎么办呢？于是你摸出了手机，打开了龟速的 GitHub，等待着下载进度条缓缓走完。然后你打开酷安，搜索一个手机能用的编译器 App，打开源代码，编译，运行。</p>
+<p>可是大多数这类软件不仅画风犹如三星堆出土，而且手感稀烂，贼鸡儿难用，况且 GitHub 网页在中国大陆的体验并不是太好（即使您可以用 fastgit, <a target="_blank" rel="noopener" href="https://github.com/521xueweihan/GitHub520">GitHub520</a> 之类的工具优化加载速度），这时，一个趁手的软件就显得极为重要，它就是 <a target="_blank" rel="noopener" href="https://termux.com/">Termux</a>。</p>
+<h1 id="使用前提"><a href="#使用前提" class="headerlink" title="使用前提"></a>使用前提</h1><ol>
+<li>一双巧手</li>
+<li>对 Linux 有初步了解</li>
+<li>手机剩余存储空间最好 ≥ 8GB</li>
+<li>一点耐心</li>
+</ol>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>Termux 是一款 Android 终端模拟器和 Linux 环境应用程序，无需 root 或设置即可直接运行。</p>
+<p>您可以在 <a target="_blank" rel="noopener" href="https://github.com/termux/termux-app/releases">GitHub</a> 或 <a target="_blank" rel="noopener" href="https://f-droid.org/en/packages/com.termux/">F-Droid</a> 里直接下载安装包安装。</p>
+<div class="warning">
+
+<blockquote>
+<p>不要在 Google Play 或酷安下载 Termux！它们的 Termux 版本太低，已经停止维护。</p>
+</blockquote>
+</div>
+
+<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p>Termux 可玩性非常高，本文只给出一种建议选择，供大家参考。</p>
+<h2 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h2><p>输入 </p>
+<pre class="language-bash" data-language="bash"><code class="language-bash">termux-change-repo</code></pre>
+
+<p>会出现以下的画面：<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/jkNhX8"><img src="https://s1.ax1x.com/2022/06/25/jkNhX8.jpg" alt="termux-change-repo" loading="lazy"></a></p>
+<p>此时按箭头键，选择 <code>Mirrors in China</code>，按下空格键，使前面的 <code>( )</code> 中带 <code>*</code>，回车继续，接下来会自动更新软件包。</p>
+<p>当出现 <code>Do you want to continue? (y/N)</code> 时，输入 <code>y</code> ，按回车继续，等待跑完。此时保持网络畅通，您的软件包就更新完辣！</p>
+<h2 id="必备软件包"><a href="#必备软件包" class="headerlink" title="必备软件包"></a>必备软件包</h2><h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><p>强大的版本控制系统！它可以让您方便地管理代码，背后还有 GitHub 作为生态。使用该工具能帮您轻松使用 GitHub，使用方法敬请百度。</p>
+<p>输入</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash">pkg <span class="token function">install</span> <span class="token function">git</span> <span class="token parameter variable">-y</span></code></pre>
+
+<p>或</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash">pkg i <span class="token function">git</span> <span class="token parameter variable">-y</span></code></pre>
+
+<p>来安装 Git。</p>
+<blockquote>
+<p>此处的 <code>install</code> 可以换成 <code>i</code>，以后不再赘述。<br>关于 <code>pkg</code> 指令，下文介绍。</p>
+</blockquote>
+<h3 id="编辑器"><a href="#编辑器" class="headerlink" title="编辑器"></a>编辑器</h3><p>为了方便地编辑文本文件而不是到 Termux 外再找个程序编辑，请务必安装一个终端编辑器。</p>
+<p>Termux 上的编辑器有很多，任选其一即可。我个人用 <code>vim</code> 习惯了，但仁者见仁，智者见智。</p>
+<p>常用的编辑器：</p>
+<ul>
+<li>vi</li>
+<li>vim</li>
+<li>nvim</li>
+<li>emacs</li>
+<li>nano</li>
+</ul>
+<h3 id="编译-x2F-解释器"><a href="#编译-x2F-解释器" class="headerlink" title="编译&#x2F;解释器"></a>编译&#x2F;解释器</h3><p>把 Workflow 丢到命令行上，从此告别繁杂的编译器 App！</p>
+<p>直接使用</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash">pkg i <span class="token operator">&lt;</span>软件包<span class="token operator">></span> <span class="token parameter variable">-y</span></code></pre>
+
+<p>即可，软件包与 Debian 几乎一样。</p>
+<p>如：</p>
+<table>
+<thead>
+<tr>
+<th align="center">软件包</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>clang</code>, <code>gcc</code></td>
+<td align="left">用于编译 C, C++, ObjectC 等语言</td>
+</tr>
+<tr>
+<td align="center"><code>python</code></td>
+<td align="left">用于解释运行 Python 语言</td>
+</tr>
+<tr>
+<td align="center"><code>openjdk-17</code></td>
+<td align="left">用于编译 Java 等语言</td>
+</tr>
+<tr>
+<td align="center"><code>kotlin</code></td>
+<td align="left">用于编译 Kotlin 语言</td>
+</tr>
+<tr>
+<td align="center"><code>Swift</code></td>
+<td align="left">用于编译 Swift 语言</td>
+</tr>
+<tr>
+<td align="center"><code>nim</code></td>
+<td align="left">用于编译 Nim 语言</td>
+</tr>
+</tbody></table>
+<h3 id="网络请求"><a href="#网络请求" class="headerlink" title="网络请求"></a>网络请求</h3><p>通过</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash">pkg i <span class="token function">curl</span> <span class="token parameter variable">-y</span>
+pkg i <span class="token function">wget</span> <span class="token parameter variable">-y</span></code></pre>
+
+<p>来安装 <code>curl</code> 和 <code>wget</code>。</p>
+<h3 id="Z-Shell"><a href="#Z-Shell" class="headerlink" title="Z Shell"></a>Z Shell</h3><p>对于刚上手，不想浪费过多时间的人，建议使用 <a target="_blank" rel="noopener" href="https://github.com/2moe/tmoe">tmoe</a>。</p>
+<p>安装：</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">curl</span> <span class="token parameter variable">-LO</span> l.tmoe.me/tinor.deb
+<span class="token function">apt</span> <span class="token function">install</span> ./tinor.deb
+<span class="token function">apt</span> update</code></pre>
+
+<p>然后运行</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash">tmoe m</code></pre>
+
+<p>来打开 <code>tmoe</code> 主程序。</p>
+<p>接下来您会看到这样的画面：<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/jkd7Ae"><img src="https://s1.ax1x.com/2022/06/25/jkd7Ae.jpg" alt="jkd7Ae.jpg" loading="lazy"></a></p>
+<p>用方向键移动光标到 <code>“Configure zsh美化终端</code>，按回车，再选择 <code>Installation and configuration 安装与配置</code>，按回车。期间如果有<code>Do you want to continue? (y/N)</code>的提示，直接 <code>y</code> 到底。</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/jkwjPJ"><img src="https://s1.ax1x.com/2022/06/25/jkwjPJ.jpg" alt="jkwjPJ.jpg" loading="lazy"></a></p>
+<p>这里让你选主题，个人建议选 <code>powerlevel10k</code>，输入 <code>171</code> 回车继续。</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/jk0FaD"><img src="https://s1.ax1x.com/2022/06/25/jk0FaD.jpg" alt="jk0FaD.jpg" loading="lazy"></a></p>
+<p>按 <code>q</code>，继续。</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/jk01Ig"><img src="https://s1.ax1x.com/2022/06/25/jk01Ig.jpg" alt="jk01Ig.jpg" loading="lazy"></a></p>
+<p>随便选个配色继续。</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/jk0NMq"><img src="https://s1.ax1x.com/2022/06/25/jk0NMq.jpg" alt="jk0NMq.jpg" loading="lazy"></a></p>
+<p>选字体，这里推荐 <code>JetBrains Mono Regular</code> (就是本博客所使用的等宽字体)，输入 <code>25</code>，回车继续。</p>
+<p>这样，宁的炫酷 zsh 就装完辣！</p>
+<h1 id="正式使用"><a href="#正式使用" class="headerlink" title="正式使用"></a>正式使用</h1><h2 id="整体布局"><a href="#整体布局" class="headerlink" title="整体布局"></a>整体布局</h2><p><a target="_blank" rel="noopener" href="https://imgtu.com/i/jkWLdA"><img src="https://s1.ax1x.com/2022/06/25/jkWLdA.jpg" alt="jkWLdA.jpg" loading="lazy"></a></p>
+<p>注意看这幅图。</p>
+<p>最下方是快捷键，光标处是您的终端。</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/jkfKL4"><img src="https://s1.ax1x.com/2022/06/25/jkfKL4.jpg" alt="jkfKL4.jpg" loading="lazy"></a></p>
+<p>从屏幕最左侧往右滑，上面的 <code>[1]</code>, <code>[2]</code> 等是正在运行的会话，您可以长按来给某一会话命名。</p>
+<p>下方的 <code>KEYBOARD</code> 为弹出和收起键盘，<code>NEW SESSION</code> 为开启新的会话。</p>
+<h2 id="Termux-的亿些小技巧"><a href="#Termux-的亿些小技巧" class="headerlink" title="Termux 的亿些小技巧"></a>Termux 的亿些小技巧</h2><ol>
+<li>双指缩放屏幕可以放大和缩小文字；</li>
+<li>下方的快捷键可以自定义，配置文件在 <code>~/.termux/termux.properties</code>；</li>
+<li>下方快捷键左滑出现一个对话框，可以在其中输入内容，按回车发送到终端。</li>
+<li>亿些快捷键：<ul>
+<li>Ctrl + A -&gt; 将光标移动到行首</li>
+<li>Ctrl + C -&gt; 中止当前进程</li>
+<li>Ctrl + D -&gt; 注销终端会话</li>
+<li>Ctrl + E -&gt; 将光标移动到行尾</li>
+<li>Ctrl + K -&gt; 从光标删除到行尾</li>
+<li>Ctrl + U -&gt; 从光标删除到行首</li>
+<li>Ctrl + L -&gt; 清除终端</li>
+<li>Ctrl + Z -&gt; 挂起（发送 SIGTSTP 到）当前进程</li>
+<li>Ctrl + alt + C -&gt; 打开新会话（仅适用于 黑客键盘）<blockquote>
+<p>注：音量- 相当于 Ctrl。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>环境变量 <code>$PREFIX</code> 的值为 <code>/data/data/com.termux/files/usr</code></li>
+<li><code>$PREFIX/etc/profile</code> 即为初始化脚本，修改该脚本即可实现新建会话时自启动。</li>
+<li>开始进程会显示问候语，默认问候语如下：</li>
+</ol>
+<pre class="language-none"><code class="language-none">Welcome to Termux!
+
+Communities: https:&#x2F;&#x2F;termux.org&#x2F;community
+Gitter chat: https:&#x2F;&#x2F;gitter.im&#x2F;termux&#x2F;termux
+IRC channel: #termux on libera.chat
+
+Working with packages:
+
+ * Search packages:   pkg search &lt;query&gt;
+ * Install a package: pkg install &lt;package&gt;
+ * Upgrade packages:  pkg upgrade
+
+Subscribing to additional repositories:
+
+ * Root:     pkg install root-repo
+ * X11:      pkg install x11-repo
+
+Report issues at https:&#x2F;&#x2F;termux.org&#x2F;issues</code></pre>
+
+<p>太长了，对吧？<br>该文本文件保存在 <code>$PREFIX/etc/motd</code>，修改即可。</p>
+<h2 id="Linux-Termux-的一些知识和指令"><a href="#Linux-Termux-的一些知识和指令" class="headerlink" title="Linux (Termux) 的一些知识和指令"></a>Linux (Termux) 的一些知识和指令</h2><p>这一段主要针对小白，大佬请跳过（逃）</p>
+<h3 id="目录和路径"><a href="#目录和路径" class="headerlink" title="目录和路径"></a>目录和路径</h3><p><code>cd</code> 指令用于进入某一目录，首先我们来了解一下目录这个概念，通俗地来说，目录就是文件夹。</p>
+<p>我们知道，在 Windows 系统中，每个盘符下都有若干文件夹，如系统盘（默认为 C: ） 下有 <code>Windows</code>, <code>Users</code>, <code>Program files</code> 等文件夹。这些文件夹又叫目录。目录间有层级关系，一个目录可以套着另一个目录。</p>
+<p>那么怎么描述这些目录呢？这就要引入路径这个概念了。</p>
+<p>路径用来描述文件和文件夹（目录）的位置，你可以把它理解为文件的地址，通过这个地址就能准确地找到一个文件。</p>
+<p>路径分为绝对路径和相对路径。</p>
+<p>绝对路径从根目录（Linux 下为 <code>/</code>）或环境变量开始，通过目录间的层级关系来表示一个目录或文件。</p>
+<p>举几个栗子：</p>
+<p>在 Windows 下，如果 <code>C:</code> 盘里有 <code>Windows</code> 文件夹，<code>Windows</code> 文件夹又套着 <code>System32</code> 文件夹，那么这个 <code>System32</code> 文件夹就可以表示为：</p>
+<pre class="language-none"><code class="language-none">C:\Windows\system32</code></pre>
+
+<p>在 Linux 下，若 <code>~</code> 下有 <code>114514</code> 目录，<code>114514</code> 目录里边又有 <code>1919810</code> 目录，然后里边又套着 <code>hao_jun_jin_qu.mp3</code>，那么这个文件就可以表示为：</p>
+<pre class="language-none"><code class="language-none">~&#x2F;114514&#x2F;1919810&#x2F;hao_jun_jin_qu.mp3</code></pre>
+
+<p>这里可以看到， Windows 和 Linux 连接目录的符号是不一样的。Windows 中使用 <code>\</code>，而 Linux 使用 <code>/</code>。</p>
+<p>相对路径相对描述一个目录，什么意思？看看您的终端：</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/jAt4Nd"><img src="https://s1.ax1x.com/2022/06/26/jAt4Nd.jpg" alt="jAt4Nd.jpg" loading="lazy"></a></p>
+<p>这是我的终端，光标上方是不是有一行</p>
+<pre class="language-none"><code class="language-none">~&#x2F;test-ssh</code></pre>
+
+<p>这就代表我现在所处的目录在 <code>~/test-ssh</code> 。</p>
+<p>现在这个目录里有一个 <code>test</code> 目录，如何描述这个目录？</p>
+<p>如果用绝对路径描述的话，应该表示成</p>
+<pre class="language-none"><code class="language-none">~&#x2F;test-ssh&#x2F;test</code></pre>
+
+<p>但是这样表示既冗长，又容易出错。那怎么办呢？</p>
+<p>因为您现在正处于 <code>~/test-ssh</code>，所以直接使用</p>
+<pre class="language-none"><code class="language-none">test</code></pre>
+
+<p>就可以表示这个目录，这就叫相对路径。</p>
+<p>再来巩固一下：</p>
+<p>设当前所在目录在 <code>~/example</code> 那么如何表示其中的 <code>linux</code> 文件夹？</p>
+<p>答案是</p>
+<pre class="language-none"><code class="language-none">linux</code></pre>
+
+<h3 id="父目录和当前目录的简略表达"><a href="#父目录和当前目录的简略表达" class="headerlink" title="父目录和当前目录的简略表达"></a>父目录和当前目录的简略表达</h3><p>若当前目录为 <code>~/test/termux/linux</code>，怎么表示 <code>~/test/termux</code>？</p>
+<p>一种方法是使用绝对路径</p>
+<pre class="language-none"><code class="language-none">~&#x2F;test&#x2F;termux</code></pre>
+
+<p>那么怎么使用相对路径表示呢？</p>
+<p>可以看到，<code>~/test/termux</code> 是 <code>~/test/termux/linux</code> 上一级的目录（简称父目录），可以用</p>
+<pre class="language-none"><code class="language-none">..</code></pre>
+
+<p>来表示。</p>
+<p>此时，<code>..</code> 就表示 <code>~/test/termux</code>。</p>
+<p>那么还有一个问题，怎么表示当前目录 <code>~/test/termux/linux</code>？</p>
+<p>一种方法是使用绝对路径，另一种方法，使用</p>
+<pre class="language-none"><code class="language-none">.</code></pre>
+
+<p>来表示当前目录。</p>
+<p>这个东西可能现在看上去没用，但是在执行脚本时非常有用。</p>
+<h3 id="cd"><a href="#cd" class="headerlink" title="cd"></a>cd</h3><p><code>cd</code> 指令可以切换当前目录。</p>
+<p>使用方法：</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> <span class="token operator">&lt;</span>目录路径<span class="token operator">></span></code></pre>
+
+<p>这里的目录路径可以填绝对路径，也可以填相对路径。</p>
+<blockquote>
+<p>注：下文若不另行提示，“目录”可填绝对路径和相对路径。</p>
+</blockquote>
+<p>如当前目录为 <code>~/test/termux/linux</code>，使用</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> <span class="token punctuation">..</span></code></pre>
+
+<p>来回到上一级目录。</p>
+<h3 id="ls"><a href="#ls" class="headerlink" title="ls"></a>ls</h3><p><code>ls</code> 是 list 的缩写，顾名思义，这个指令能列出给出目录的所有文件和目录。若不给出路径，则列出当前目录的所有文件和目录。</p>
+<p>用法：</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">ls</span> <span class="token punctuation">[</span>选项<span class="token punctuation">]</span> <span class="token punctuation">[</span>目录<span class="token punctuation">]</span></code></pre>
+
+<p>其中选项和目录均可选可不选。</p>
+<p>若要获得详细的帮助，使用</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">ls</span> <span class="token parameter variable">--help</span></code></pre>
+
+<p>来获取帮助。</p>
+<blockquote>
+<p>注：若用 <code>tmoe</code> 配置过 Termux，则可以用 <code>la</code>， <code>l</code> 来代替  <code>ls</code>，且更炫酷（</p>
+</blockquote>
+<h3 id="rm"><a href="#rm" class="headerlink" title="rm"></a>rm</h3><p><code>rm</code> 代表 remove，意为删除。使用该指令可以删除文件。</p>
+<p>用法：</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">rm</span> <span class="token punctuation">[</span>选项<span class="token punctuation">]</span> <span class="token operator">&lt;</span>文件路径<span class="token operator">></span></code></pre>
+
+<p>选项可选可不选，文件可以指派多个，不同文件用空格隔开。</p>
+<p>选项里有几个用得特别多：</p>
+<ul>
+<li><code>-r</code> 递归，可直接删除目录。若无此选项则只能删除单个文件。</li>
+<li><code>-f</code> 强制删除（慎用！）</li>
+</ul>
+<p>获取更多信息，参见</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">rm</span> <span class="token parameter variable">--help</span></code></pre>
+
+<h3 id="cp-amp-mv"><a href="#cp-amp-mv" class="headerlink" title="cp &amp; mv"></a>cp &amp; mv</h3><p><code>cp</code> 意为 copy ，<code>mv</code> 意为 move，是 Linux 下的复制和剪切操作，用法差不多。</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">cp</span> <span class="token punctuation">[</span>选项<span class="token punctuation">]</span> <span class="token operator">&lt;</span>源文件<span class="token operator">></span> <span class="token operator">&lt;</span>目标文件（夹）<span class="token operator">></span></code></pre>
+
+<p>此处目标文件（夹）可以是一个不存在的文件，也可以是存在的文件夹。如果是一个不存在的文件，则将源文件复制到目标文件所在的文件夹，再重命名为该文件。如果是一个存在的文件夹，则将源文件复制到该文件夹，文件名不变。</p>
+<blockquote>
+<ol>
+<li>若目标文件为一个存在的文件，则会覆盖该文件，慎用！</li>
+<li>如果目标文件为一个不存在的文件，那么该文件所在的目录一定要是存在的，否则会报错。</li>
+<li>选项使用 <code>-r</code> 可复制整个文件夹。</li>
+</ol>
+</blockquote>
+<p><code>mv</code> 用法类似，不再赘述了。</p>
+<p>For more information, <code>--help</code> 大法好。</p>
+<hr>
+<p>先写到这。（摸了一天，好累哦.jpg）</p>
+</div></section><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong>NameSetter</li><li class="post-copyright-link"><strong>本文链接：</strong><a href="https://ssmzhn.vercel.app/2022/06/25/termux-guide/" title="Termux 使用指南">https://ssmzhn.vercel.app/2022/06/25/termux-guide/</a></li><li class="post-copyright-license"><strong>版权声明：</strong>本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><span class="icon iconify" data-icon="ri:creative-commons-line"></span><span class="icon iconify" data-icon="ri:creative-commons-by-line"></span><span class="icon iconify" data-icon="ri:creative-commons-nc-line"></span><span class="icon iconify" data-icon="ri:creative-commons-sa-line"></span></a> 许可协议。</li></ul></article><div class="post-nav"><div class="post-nav-item"><a class="post-nav-prev" href="/2022/08/20/hello-world/" rel="prev" title="Hello World"><span class="icon iconify" data-icon="ri:arrow-left-s-line"></span><span class="post-nav-text">Hello World</span></a></div><div class="post-nav-item"><a class="post-nav-next" href="/2022/01/01/waaru/" rel="next" title="草"><span class="post-nav-text">草</span><span class="icon iconify" data-icon="ri:arrow-right-s-line"></span></a></div></div></div><div class="hty-card" id="comment"><div class="comment-tooltip text-center"><span>若您想及时得到回复提醒，建议跳转 GitHub Issues 评论。</span><br><span>若没有本文 Issue，您可以使用 Comment 模版新建。</span><br></div><style>.utterances {
+  max-width: 100%;
+}</style><script src="https://utteranc.es/client.js" repo="ssmzhn/ssmzhn.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async></script></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2021 – 2023 </span><span class="with-love" id="animate"><span class="icon iconify" data-icon="ri:cloud-line"></span></span><span class="author"> NameSetter</span></div><div class="powered"><span>由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v6.3.0</span><span class="footer-separator">|</span><span>主题 - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.10.9</span></div><div class="live-time"><span>这个博客爬了</span><span id="display_live_time"></span><span class="moe-text">😅</span><script>function blog_live_time() {
+  setTimeout(blog_live_time, 1000);
+  const start = new Date('2021-08-15T17:23:40');
+  const now = new Date();
+  const timeDiff = (now.getTime() - start.getTime());
+  const msPerMinute = 60 * 1000;
+  const msPerHour = 60 * msPerMinute;
+  const msPerDay = 24 * msPerHour;
+  const passDay = Math.floor(timeDiff / msPerDay);
+  const passHour = Math.floor((timeDiff % msPerDay) / 60 / 60 / 1000);
+  const passMinute = Math.floor((timeDiff % msPerHour) / 60 / 1000);
+  const passSecond = Math.floor((timeDiff % msPerMinute) / 1000);
+  display_live_time.innerHTML = ` ${passDay} 天 ${passHour} 小时 ${passMinute} 分 ${passSecond} 秒`;
+}
+blog_live_time();
+</script></div></footer></div><a class="hty-icon-button" id="back-to-top" aria-label="back-to-top" href="#"><span class="icon iconify" data-icon="ri:arrow-up-s-line"></span><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a><script>function initMourn() {
+  const date = new Date();
+  const today = (date.getMonth() + 1) + "-" + date.getDate()
+  const mourn_days = ["4-4","9-18","4-5","12-13","5-12","7-7"]
+  if (mourn_days.includes(today)) {
+    document.documentElement.style.filter = "grayscale(1)";
+  }
+}
+initMourn();</script></body></html>
